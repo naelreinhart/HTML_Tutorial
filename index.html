@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="author" content="Nathaniel Reinhart">
-        <meta name="description" content="This page contains all the things I am learning how to create as I learn HTML.">
-        <title>Nael's Web Page</title>
-        <link rel="icon" href="html5.png" type="image/x-icon">
-        <link rel="stylesheet" href="page-style.css">
-    </head>
 
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Nathaniel Reinhart">
+    <meta name="description" content="This page contains all the things I am learning how to create as I learn HTML.">
+    <title>Nael's Web Page</title>
+    <link rel="icon" href="html5.png" type="image/x-icon">
+    <link rel="stylesheet" href="page-style.css">
+</head>
+
+<body>
+    <header>
         <h1>My Goals for 2023!</h1>
 
-        <hr>
-
-        <nav>
+        <nav aria-label="primary-navigation">
             <ul>
                 <li>
                     <a href="#html">Learning HTML</a>
@@ -24,78 +24,104 @@
                 </li>
             </ul>
         </nav>
+    </header>
 
-        <hr>
-
-        <section id="html">
+    <hr>
+    <main>
+        <article id="html">
             <h2>I'm ready to learn HTML</h2>
             <p>This is my first web page.</p>
-            <img src="img/html5.png" alt="HTML5 Logo" title="HTML5 Logo" width="300" height="300">
-            <figure>
-                <figcaption>An Example of HTML5 Code:</figcaption>
-                <p>
-                    <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
-                </p>
-            </figure>
-        
-            <h3>My daily schedule</h3>
-            <p>Let me tell you how:</p>
-            <ol>
-                <li>...I learn more about web dev.</li>
-                <li>...I plan out my schedule.</li>
-                <li>...I use resources from <abbr title="Mozilla Developer Network"><a href="https://developer.mozilla.org">MDN</a></abbr>.</li>
-            </ol>
-        </section>
+            <section>
+                <h3>HTML5</h3>
+                <img src="img/html5.png" alt="HTML5 Logo" title="HTML5 Logo" width="300" height="300">
+                <figure>
+                    <figcaption>An Example of HTML5 Code:</figcaption>
+                    <p>
+                        <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
+                    </p>
+                </figure>
+            </section>
+            <section>
+                <h3>My daily schedule</h3>
+                <p>Let me tell you how:</p>
+                <ol>
+                    <li>...I learn more about web dev.</li>
+                    <li>...I plan out my schedule.</li>
+                    <li>...I use resources from <abbr title="Mozilla Developer Network"><a
+                                href="https://developer.mozilla.org">MDN</a></abbr>.</li>
+                </ol>
+                <aside>
+                    <details>
+                        <summary>Guess the <mark>of hours</mark> I code per day?</summary>
+                        <p>I start at <time datetime="14:00">2 PM</time> and I write code for <time datetime="PT2H">2
+                                hours</time> every afternoon.
+                        </p>
+                    </details>
+                </aside>
+            </section>
+        </article>
 
         <hr>
 
-        <section id="vacation">
+        <article id="vacation">
             <h2>I'm also planning a vacation</h2>
             <p>I've been working hard and <em>really need a getaway</em>.</p>
-            <p>I live in <abbr title="Banjarmasin"> <a href="https://goo.gl/maps/4hnexSwAH8QGiNbQ9">BJM</a></abbr>.</p>
-        
-            <h3>Places I'd like to visit</h3>
-            <ul>
-                <li>
-                    <p>I've heard good things about the Caribbean</p>
-                    <figure>
-                        <img src="img/caribbean.jpg" alt="Carribean Beach" title="Caribbean Beach" width="640" height="360" loading="lazy">
-                        <figcaption>Caribbean Beach Gateaway</figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <p>I've heard good things about going here:</p>
-                    <address>
-                        Margaritaville yada yada yada <br>
-                        Puerto Morelos, Mexico <br>
-                        Colonia Morelos, Mexico 77580
-                    </address>
-                    <figure>
-                        <img src="img/vacation.jpg" alt="Cancun Vacation" title="It's 5 o'clock Somewhere" width="640" height="360" loading="lazy">
-                        <figcaption>A Caribbean Vacation Image</figcaption>
-                    </figure>
-                </li>
-            </ul>
-         
+            <p>I live in <abbr title="Banjarmasin"> <a href="https://goo.gl/maps/4hnexSwAH8QGiNbQ9">BJM</a></abbr>.
+            </p>
+            <section>
+                <h3>Places I'd like to visit</h3>
+                <ul>
+                    <li>
+                        <p>I've heard good things about the Caribbean</p>
+                        <figure>
+                            <img src="img/caribbean.jpg" alt="Carribean Beach" title="Caribbean Beach" width="640"
+                                height="360" loading="lazy">
+                            <figcaption>Caribbean Beach Gateaway</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <p>I've heard good things about going here:</p>
+                        <address>
+                            Margaritaville yada yada yada <br>
+                            Puerto Morelos, Mexico <br>
+                            Colonia Morelos, Mexico 77580
+                        </address>
+                        <figure>
+                            <img src="img/vacation.jpg" alt="Cancun Vacation" title="It's 5 o'clock Somewhere"
+                                width="640" height="360" loading="lazy">
+                            <figcaption>A Caribbean Vacation Image</figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </section>
+
             <!-- TODO: ADD MORE PLACES-->
-            <h3>Places I want to avoid</h3>
-            <dl>
-                <dt>North Pole</dt>
-                <dd>I hear this is <strong>cold</strong>!</dd>
+            <section>
+                <h3>Places I want to avoid</h3>
+                <dl>
+                    <dt>North Pole</dt>
+                    <dd>I hear this is <strong>cold</strong>!</dd>
 
-                <dt>South Pole</dt>
-                <dd>This is also cold.</dd>
+                    <dt>South Pole</dt>
+                    <dd>This is also cold.</dd>
 
-                <dt>Mountain Tops</dt>
-                <dd>These are also cold.</dd>
-            </dl>
-        </section> 
+                    <dt>Mountain Tops</dt>
+                    <dd>These are also cold.</dd>
+                </dl>
+            </section>
+        </article>
+    </main>
 
-        <hr>
+    <hr>
 
-        &lt;&lt;&lt; &copy; <a href="about.html">Nathaniel Reinhart</a> &gt;&gt;&gt;
+    <footer>
+        <p>
+            &lt;&lt;&lt; &copy; <a href="about.html">Nathaniel Reinhart</a> &gt;&gt;&gt;
+        </p>
         <p>
             <a href="#">Back to Top</a>
         </p>
-    </body>
+    </footer>
+</body>
+
 </html>
