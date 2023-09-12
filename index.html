@@ -22,6 +22,9 @@
                 <li>
                     <a href="#vacation">Planning a Vacation</a>
                 </li>
+                <li>
+                    <a href="#contact">Contact Me</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -157,6 +160,117 @@
                     <dd>These are also cold.</dd>
                 </dl>
             </section>
+        </article>
+
+        <hr>
+
+        <article id="contact">
+            <h2>Contact Me</h2>
+            <p>I'd really like to hear from you</p>
+            <form action="https://httpbin.org/get" method="get">
+                <fieldset>
+                    <legend>Personal Info</legend>
+                    <p> <!-- name form-->
+                        <label for="firstname">First Name:</label>
+                        <input type="text" name="firstname" id="firstname" placeholder="Jane" autocomplete="on"
+                            required>
+                    </p>
+                    <p> <!-- name form-->
+                        <label for="lastname">Last Name:</label>
+                        <input type="text" name="lastname" id="lastname" placeholder="Doe" autocomplete="on" required>
+                    </p>
+                    <p> <!-- password form-->
+                        <label for="password">Password:</label>
+                        <input type="password" name="password" id="password" placeholder="your secret" required>
+                    </p>
+                    <p> <!-- phone number form-->
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" name="phone" id="phone" placeholder="5555555555" pattern="[0-9]{10}" required>
+                    </p>
+                    <p> <!-- number (year) form-->
+                        <label for="birth-year">Birth Year:</label>
+                        <input type="number" name="birth-year" id="birth-year" min="1950" max="2050" step="1"
+                            value="2000">
+                    </p>
+                    <!-- form select
+                <p> 
+                    <label for="drinks">Favorite Drink:</label>
+                    <select name="drinks" id="drinks" multiple size="6">
+                        <optgroup label="Coffee">
+                            <option value="espresso">Espresso</option>
+                            <option value="americano">Americano</option>
+                            <option value="latte">Latte</option>
+                            <option value="cappuccino">Cappuccino</option>
+                        </optgroup>
+                        <optgroup label="Tea">
+                            <option value="iced tea">Iced Tea</option>
+                            <option value="Hot Tea">Hot Tea</option>
+                            <option value="Lemon Tea">Lemon Tea</option>
+                            <option value="Lychee Tea">Lychee Tea</option>
+                        </optgroup>
+                        <option value="others">Others</option>
+                    </select>
+                </p> -->
+                    <p><!-- form input list-->
+                        <label for="drink">Favorite Drinks:</label>
+                        <input type="text" name="drink" id="drink" list="drink-list">
+                        <datalist id="drink-list">
+                            <option value="Espresso">
+                            <option value="Americano">
+                            <option value="Latte">
+                            <option value="Cappuccino">
+                            <option value="Iced Tea">
+                            <option value="Hot Tea">
+                            <option value="Lemon Tea">
+                            <option value="Lychee Tea">
+                        </datalist>
+                    </p>
+                </fieldset>
+                <br>
+                <fieldset> <!--Choose only 1 option-->
+                    <legend>What is your favorite food?</legend>
+                    <p>
+                        <input type="radio" name="food" id="tacos" value="tacos">
+                        <label for="tacos">Tacos</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="food" id="pizza" value="pizza">
+                        <label for="pizza">Pizza</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="food" id="other" value="other">
+                        <label for="other">Other</label>
+                    </p>
+                </fieldset>
+                <br>
+                <fieldset> <!--Choose many option-->
+                    <legend>Do you have pets?</legend>
+                    <p>
+                        <input type="checkbox" name="pets" id="dog" value="dog">
+                        <label for="dog">Dog</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="pets" id="cat" value="cat">
+                        <label for="cat">Cat</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="pets" id="otherPet" value="otherPet">
+                        <label for="otherPet">Other</label>
+                    </p>
+                </fieldset>
+                <br>
+                <fieldset> <!-- enter a text form-->
+                    <legend>Send me a note!</legend>
+                    <label for="message">Your Message:</label>
+                    <br>
+                    <textarea name="message" id="message" cols="30" rows="10"
+                        placeholder="Type your message here"></textarea>
+                </fieldset>
+                <br>
+                <button type="submit">Submit</button>
+                <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+                <button type="reset">Reset</button>
+            </form>
         </article>
     </main>
 
